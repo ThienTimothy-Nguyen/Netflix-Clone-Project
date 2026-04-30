@@ -32,9 +32,9 @@ const MovieList = () => {
     for(let i = 0; i < movies?.length; ++i){{
         movieArr.push(
             <div key={movies[i].id} ref={loadMoreRef}>
-                <li  className="overflow-">
+                <li  className="overflow-scroll">
                     <MovieCard movie={movies[i]}/>
-                    {i<20 && <h1 className="movie_num absolute top-[55%] translate-x-[-10px] z-11 text-7xl font-black text-shadow-lg opacity-[.7]">
+                    {i<20 && <h1 className="movie_num absolute top-[55%] -translate-x-2.5 z-11 text-7xl font-black text-shadow-lg opacity-[.7]">
                         {i+1}
                     </h1>}
                 </li>

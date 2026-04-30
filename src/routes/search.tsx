@@ -23,7 +23,7 @@ export const Route = createFileRoute('/search')(
       </div>
 
       {results.length > 0 ? ( 
-        <div className='mt-8 p-8 flex flex-wrap gap-y-[16px] '> 
+        <div className='mt-8 p-8 flex flex-wrap gap-y-4 '> 
             {results.map((movie) => 
             <MovieCard key={movie.id} movie={movie} /> )} 
         </div> ) : 

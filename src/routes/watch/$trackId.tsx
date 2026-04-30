@@ -32,11 +32,11 @@ function RouteComponent() {
   if (isError) return <div>{error.message}</div>
 
   return (
-    <div className='row mt-[48px] flex justify-center' >
-      <div className=' flex gap-[48px] flex-col'>
+    <div className='row mt-12 flex justify-center' >
+      <div className=' flex gap-12 flex-col'>
         <div className=' flex gap-6 sm:gap-8 md:gap-14'>
           <button onClick={() => setShowVideo(!showVideo)}>
-            <Card className='min-w-[180px] max-w-[200px] sm:max-w-[296px] md:max-w-[336px] overflow-hidden relative cursor-pointer p-0 rounded-lg'>
+            <Card className='min-w-45 max-w-50 sm:max-w-74 md:max-w-84 overflow-hidden relative cursor-pointer p-0 rounded-lg'>
                 <img className='hover:opacity-[0.8] transition-all ease-in-out duration-250 w-full h-full' src={movie?.poster_path? TMDB_IMAGES_ASSET_URL + movie?.poster_path : '/placeholder.svg'} alt="" />
             </Card>
           </button>
@@ -53,14 +53,14 @@ function RouteComponent() {
             <h1 className='text-sm sm:text-lg md:text-xl'>
               Rating: {movie?.vote_average?.toFixed(1)}
             </h1>
-            <button onClick={() => setShowVideo(!showVideo)} className='min-h-[32px] max-w-[400px] bg-white text-black border rounded-lg'>
+            <button onClick={() => setShowVideo(!showVideo)} className='min-h-8 max-w-100 bg-white text-black border rounded-lg'>
               Watch now
             </button>
           </div>
         </div>
         <div className='flex flex-col gap-4'>
           <h1 className=' text-2xl md:text-3xl'>Description</h1>
-          <p className=' text-md md:text-xl max-w-[800px]'>
+          <p className=' text-md md:text-xl max-w-200'>
             {movie?.overview}
           </p>
         </div>
