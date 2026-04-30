@@ -21,7 +21,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/Netflix-Clone-Project"
+  base: "/Netflix-Clone-Project/"
 })
 
 
