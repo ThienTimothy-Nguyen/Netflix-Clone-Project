@@ -4,11 +4,11 @@ import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/react";
 
 const Header = () => {
     return ( 
-    <header className="row relative z-[1]">
+    <header className="row relative z-1">
         <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-2">
-                <h1 className="font-bold sm:text-3xl text-2xl h-[5%] my-[16px] text-red-600 mr-[16px]">
-                    NEXFLIX
+                <h1 className="font-bold sm:text-3xl text-2xl h-[5%] my-4 text-red-600 mr-4">
+                    NetReact
                 </h1>
             </Link>
             <div className="flex items-center gap-4">
