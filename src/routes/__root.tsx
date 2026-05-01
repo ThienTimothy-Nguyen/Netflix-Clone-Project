@@ -9,7 +9,10 @@ console.log(publishableKey)
 export const Route = createRootRoute({
   component: () => (
     <React.Fragment>
-      <ClerkProvider publishableKey={publishableKey}>
+      <ClerkProvider 
+        publishableKey={publishableKey}
+        afterSignOutUrl="/Netflix-Clone-Project/"
+      >
           <Header />
           <div className='min-h-[80vh]'>
             <Outlet />
